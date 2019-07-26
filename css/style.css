@@ -18,6 +18,7 @@ header {
     border-radius: 0.4em;
     writing-mode: vertical-rl;
     transform: rotate(-180deg);
+    z-index: 1;
 }
 header h1{
     padding: 0.2em 0;
@@ -32,6 +33,7 @@ header h1{
     box-shadow: 4px 4px 4px 0 #000, -4px -4px 4px 0 #000;
     border-radius: 0.4em;
     overflow: scroll;
+    z-index: 2;
 }
 
 .todolist {
