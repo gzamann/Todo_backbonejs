@@ -37,14 +37,14 @@ var TodoItemView = Backbone.View.extend({
         // this.$el.append("<input id='toggle' type='checkbox' " + status + "/>" +
         //     "<span>" + title + "</span>" +
         //     "<i id='remove' class='icon ion-ios-trash'></i>")
-
+        let completed = this.model.get('completed')
         let source = document.getElementById('todoTemplate').innerHTML
-
-        var template = Handlebars.compile(source);
+        
+        var template = Handlebars.compile(source)
         
         let title = this.model.get('title')
         
-        var html = template({title});
+        var html = template({title, completed})
         
         this.$el.html(html)
 
