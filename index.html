@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="js/todoItem.js"></script>
+    <script src="js/todoItems.js"></script>
+    <script src="js/todoItemView.js"></script>
+    <script src="js/todoItemsView.js"></script>
+    <script src="js/main.js"></script>
+
+    
+    <header class="header">
+        <h1>Todo app with backbone</h1>
+    </header>
+    <div id="app"></div>
+    <script type="text/html" id="todoTemplate">
+        <input type="checkbox" {{#if completed}}checked{{/if}} id="toggle"></input>
+        <span>{{title}}</span>
+        <i id='remove' class='icon ion-ios-trash'></i>
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    height: 100vh;
+    background: linear-gradient(125deg, #0072BB 70%, #454ADE);
+    color: white;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-size: 1.4em;
+    overflow: hidden;
+}
+
+header {
+    font-size: 0.5em;
+    color: #D9ECFA;
+    background: #3F8EFC;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0.4em;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+header h1{
+    padding: 0.2em 0;
+}
+
+#app {
+    width: 70%;
+    height: 90vh;
+    margin: 3% auto;
+    background: #272D2D;
+    max-width: 600px;
+    box-shadow: 4px 4px 4px 0 #000, -4px -4px 4px 0 #000;
+    border-radius: 0.4em;
+    overflow: scroll;
+}
+
+.todolist {
+    margin: 0;
+    padding: 0 4%;
+    padding-top: 1em;
+    border-radius: 0.4em;
+    list-style: none;
+}
+
+.todolist>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6em;
+}
+
+.inputbox {
+    flex-grow: 1;
+    color: #eee;
+    font-size: 1em;
+    letter-spacing: 2px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3772FF;
+}
+
+.todoitem {
+    padding: 8px 4px;
+    margin-bottom: 0.5em;
+    border-radius: 0.2em;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.todoitem span {
+    flex-grow: 1;
+    margin: 0 0.6em;
+}
+
+.addbutton {
+    padding: 4px;
+}
+
+.done {
+    color: #000;
+    text-decoration: line-through;
+    background: #CCE6A5;
+}
+
+.icon {
+    color: #3772FF;
+}
+
+#remove {
+    color: #DE4D60;
+}
